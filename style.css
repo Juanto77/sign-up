@@ -1,0 +1,85 @@
+:root {
+  --main-background: #cb997e50;
+  --form: #6b705c;
+  --button-color: #cb997e;
+  --button-border: #ffe8d6;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background-color: var(--main-background);
+}
+
+.container-left,
+.container-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-left {
+  width: 40%;
+  height: auto;
+  background-image: url(./assets/images/plants.jpg);
+  background-size: cover;
+}
+
+.container-right {
+  width: 60%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
+  background-color: var(--form);
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 100%;
+}
+
+form {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: #fff;
+  border: 10px solid #bec3af;
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+label {
+  display: block;
+  padding: 5px;
+  color: #6b705c;
+}
+
+/* .buttons {
+  padding: 10px;
+} */
